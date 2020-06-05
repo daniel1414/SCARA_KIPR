@@ -56,11 +56,11 @@ main PCB version 4
  
 [DSFL] MAIN V7.20 PCMCIA-ATA RD@0x0 (-128) dfdevtbl@0x2D836511
 [ksinitsk] syin continues
-Updated $MC_PATH = D:\Documents\My Workcells\Robot\Robot_1\MC
+Updated $MC_PATH = c:\kipr\scara\ROBOGU~1\robot\robot_1\mc
 Updated $MED_PATH to = C:\ProgramData\FANUC\FRVRC Media\V7.70
 Updated $UD1_PATH to = D:\Documents\My Workcells\Robot\Robot_1\UD1
 Updated $UD2_PATH to = D:\Documents\My Workcells\Robot\Robot_1\UD2
-[syinit] bootrom time: 376267 ms
+[syinit] bootrom time: 287172 ms
 [syinit] ** HOT START **
 [syinit] System Version V7.7077        2/6/2013
 [ERLOG] Waiting for UIF to start up
@@ -73,13 +73,13 @@ Updated $UD2_PATH to = D:\Documents\My Workcells\Robot\Robot_1\UD2
 [dpsetlng] setting cur lang to DEFAULT     
 [tppascon_config] wait for EVB_SPINITDONE
 [sycfgmen] cfgmenu_p 0x406F758C
-[syinisb0] tpid check ltp = 0x5B01760, tpid = 49
+[syinisb0] tpid check ltp = 0x51F888, tpid = 49
 [NTSYIN_STEP] Startup Step #1
 VMGR for R-J3iC V7.20
 [vmshadow_periodic] Normal power shutdown state = 0
 [vminit_loadctx] Loaded FRB:\S-SYSTEM.PRV only
 [vminit_loadctx] Loaded FRB:\S-INTERN.PRV only
-[vminit_loadctx] Done Loading Time = 68245us
+[vminit_loadctx] Done Loading Time = 44563us
 [NTSYIN_STEP] Startup Step #2
 [ntspfload] Skipping \RPCLIB.DLL because it is already loaded
 [ntspfload] Skipping \SHTMLIB.DLL because it is already loaded
@@ -100,9 +100,9 @@ Web Enhancements installed
 [syinisb0] Legacy 2, tpid = 49
 [dpsetlng] setting cur lang to DEFAULT     
 [tppascon_config] wait for EVB_SPINITDONE
-[dpimage_restctx] Loading DEFAULT      dictionaries pool_avail = 30878880
+[dpimage_restctx] Loading DEFAULT      dictionaries pool_avail = 30878328
 [dpimage_restctx] Ref time cached:120ms nocache:620ms, Numfiles = 224 Time 0ms
-[dpimage_restctx] Dictionaries loaded pool_avail = 30030768
+[dpimage_restctx] Dictionaries loaded pool_avail = 30030216
 [dpsetlng] setting cur lang to DEFAULT     
 [tppascon_config] wait for EVB_SPINITDONE
 [NTSYIN_STEP] Startup Step #4
@@ -128,12 +128,12 @@ Web Enhancements installed
 [NTFRCPY] Did not load \VSMO.DLL
 [ntspfload] Skipping \VXLIB.DLL because it is already loaded
 [NTFRCPY] Did not load \YBOX.DLL
-[SYSINISB0] spspload reference time 44355 ms, This Time 301ms
+[SYSINISB0] spspload reference time 44355 ms, This Time 244ms
 [vminit_loadctx] Loading all files
-[vminit_loadctx] Done Loading Time = 26841us
+[vminit_loadctx] Done Loading Time = 27642us
 [Syin] Mobo start 0xFFFFFFFF
 [NTSYIN_STEP] Startup Step #5
-[SYINISB)] total time 543
+[SYINISB)] total time 436
 [NTSYIN_STEP] Startup Step #6
 [NTSYIN_STEP] Startup Step #7
 [SYINISUB] Saving user device MC:
@@ -203,7 +203,7 @@ sswrkset ****rspaceg_p is 40626978
 [vlog] oschggrp(115, 4, 0) 0x00000000
 [vtrn] wake up
 [vtrn] oschggrp(136, 4, 0) 0x00000000
-[vtrn] VTRN_P: $0893EE14
+[vtrn] VTRN_P: $088E87FC
 
 WEB Server starting
 Web Enhancements installed
@@ -223,8 +223,8 @@ Web Enhancements installed
 [NTSYIN_STEP] Startup Step #33
 [DEBUG] Entering moinit
 [lcmainsp] size of $SERV_REC is 3616
-[modaq] create XYZ named pipe hPipe = 62C
-[sfmdest] null_flg_p:84E0C78
+[modaq] create XYZ named pipe hPipe = 618
+[sfmdest] null_flg_p:848A660
 [pmgr]shakehand px01, px_starting=126
 [pmgr]shakehand px02, px_starting=124
 [pmgr]shakehand px03, px_starting=120
@@ -232,7 +232,8 @@ Web Enhancements installed
 [pmgr]shakehand px05, px_starting=96
 [pmgr]shakehand px06, px_starting=64
 [pmgr]shakehand px07, px_starting=0
-[miinit][1] posted init PKT <6EFA904> to task<72> (0)
+[miinit][1] posted init PKT <6EA4904> to task<72> (0)
+[miinit] done 
 [mpinit] initialize mb_fp
 [mpinit] after mpdyinit
 [mpinit] ossndpkt <0>
@@ -243,8 +244,7 @@ Web Enhancements installed
 [tbjtkini] finish wake up stat = 0
 [nectkini] finish wake up  stat = 0
 [moinit] done
-[miinit] done 
-[ostksock_create] Socket 1612 binding to IP port # 60004
+[ostksock_create] Socket 1540 binding to IP port # 60004
 [ostksock_create] T-X IP address <001.001.001.011>
 [mfinidsp] wait for SCRDY
 [mfinidsp] start ITP
@@ -252,7 +252,7 @@ Web Enhancements installed
 [mfinidsp] check FSSB open
 [mfinidsp] waiting for SSTB...
 [mfinidsp] all SSTB become 1
-[syinisub] TICK_OFFSET 7AEF24 to 0
+[syinisub] TICK_OFFSET 51CBE4 to 0
 [NTSYIN_STEP] Startup Step #34
 [NTSYIN_STEP] Startup Step #35
 [syinit] waiting for EVF_ENB_PWF...
@@ -295,7 +295,7 @@ WEB Server starting
 [HTTC]: Binding to tcp port number 4080
 [symonutl] Getting data (3EA, 0)
 [symonutl] Fail to get mac from I2C (1)
-SYINISUB TOTAL TIME 1074
+SYINISUB TOTAL TIME 902
 [SYINISUB] restored user device MC:
 [NTSYIN_STEP] Startup Step #40
 [TPSPART] Found KAREL ATMSKCHG 200
@@ -303,10 +303,10 @@ SYINISUB TOTAL TIME 1074
 [TPSPART] Found KAREL ATWAITRL 931
 [TPSPART] Found KAREL ATPRSCRN 932
 [TPSPART] Found KAREL ATPASWRD 935
-[TPKSINIT] dname -K943- not found devstat = 0 cfg $8207648
+[TPKSINIT] dname -K943- not found devstat = 0 cfg $81B1014
 [TPSPART] Found KAREL ATCELLIO 955
-[TPKSINIT] dname -K972- not found devstat = 0 cfg $82073BC
-[TPKSINIT] dname -K973- not found devstat = 0 cfg $82072A0
+[TPKSINIT] dname -K972- not found devstat = 0 cfg $81B0D88
+[TPKSINIT] dname -K973- not found devstat = 0 cfg $81B0C6C
 [TPSPART] Found KAREL ATSOFTPA 992
 [FTP] getservbyname failed
 [FTP] getservbyname failed
@@ -314,7 +314,7 @@ SYINISUB TOTAL TIME 1074
 [NTSYIN_STEP] Startup Step #41
 [osppc] Tick time changed -1200
 [NTSYIN_STEP] Startup Step #42
-[PMON] Connecting to <127.000.000.001:5183>
+[PMON] Connecting to <127.000.000.001:5182>
 
 SMON(main)> xyzrate 61
 spcmd time 0 
@@ -323,134 +323,26 @@ R E S E T
 [ntsuperv] Sync state change from 0 to 1
 [ntsuperv] Sync state change from 1 to 0
 
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
+SMON(main)> xyzrate 61=>desktop-b25t4o0:16056
 spcmd time 0 
 spcmd completed successfully.
 
 [osppc] Tick time changed -200
 
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
+SMON(main)> xyzrate 11=>desktop-b25t4o0:16056
 spcmd time 0 
 spcmd completed successfully.
 
 [dvnewmd] Set needs_update program
 
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 11 
+SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:16056
+Copy time 6 
 R E S E T                                                                     
 [ntsuperv] Sync state change from 0 to 1
 R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-[daq_listfields_1] called
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
+DAQ connecting to <127.0.0.1:51765>
 
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
+SMON(main)> xyzrate 61=>desktop-b25t4o0:16056
 spcmd time 0 
 spcmd completed successfully.
 
@@ -459,464 +351,18 @@ spcmd completed successfully.
 [NTPORT] accept connection
 [dvnewmd] Set needs_update program
 
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 9 
-
-SMON(main)> copy frs:orderfil.dat virt:\tmpback\=>desktop-b25t4o0:15916
+SMON(main)> copy frs:orderfil.dat virt:\tmpback\=>desktop-b25t4o0:16056
 Copy time 0 
 
-SMON(main)> copy mdb:*.* virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 1080 
+SMON(main)> copy mdb:*.* virt:\tmpback\=>desktop-b25t4o0:16056
+Copy time 1066 
 
-SMON(main)> xcopy fr:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-spcmd time 18 
+SMON(main)> xcopy fr:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:16056
+spcmd time 21 
 spcmd completed successfully.
 
 
-SMON(main)> xcopy fra:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-[SPRUNCMDF] status = 2A0014; "XCOPY FRA:\*.* VIRT:\TMPBACK\*.*  " : FRA:\*.*
-End of directory
-[SMON] error 0x002A0014
-R E S E T                                                                     
-[dvnewmd] Set needs_update program
-
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 1901 
-
-SMON(main)> copy frs:orderfil.dat virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 0 
-
-SMON(main)> copy mdb:*.* virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 1214 
-
-SMON(main)> xcopy fr:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-spcmd time 18 
-spcmd completed successfully.
-
-
-SMON(main)> xcopy fra:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-[SPRUNCMDF] status = 2A0014; "XCOPY FRA:\*.* VIRT:\TMPBACK\*.*  " : FRA:\*.*
-End of directory
-[SMON] error 0x002A0014
-R E S E T                                                                     
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-[dvnewmd] Set needs_update program
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 7 
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-
-SMON(main)> copy frs:orderfil.dat virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 0 
-
-SMON(main)> copy mdb:*.* virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 1180 
-
-SMON(main)> xcopy fr:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-spcmd time 15 
-spcmd completed successfully.
-
-
-SMON(main)> xcopy fra:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-[SPRUNCMDF] status = 2A0014; "XCOPY FRA:\*.* VIRT:\TMPBACK\*.*  " : FRA:\*.*
-End of directory
-[SMON] error 0x002A0014
-R E S E T                                                                     
-[dvnewmd] Set needs_update program
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 7 
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-[dvnewmd] Set needs_update program
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 7 
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[dvnewmd] Set needs_update program
-
-SMON(main)> copy md:program_1.tp virt:\temp\=>desktop-b25t4o0:15916
-Copy time 6 
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-[osppc] Tick time changed -200
-
-SMON(main)> xyzrate 11=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-R E S E T                                                                     
-[ntsuperv] Sync state change from 0 to 1
-R E S E T                                                                     
-DAQ connecting to <127.0.0.1:51866>
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:2)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-MOTN-056 Speed limits used (G:1)                                               
-MOTN-056 Speed limits used (G:1)                                               
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:4)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:6)                                             
-SRVO-171 MotorSpd lim/DVC(G:1 A:3)                                             
-
-SMON(main)> xyzrate 61=>desktop-b25t4o0:15916
-spcmd time 0 
-spcmd completed successfully.
-
-[osppc] Tick time changed -1200
-[ntsuperv] Sync state change from 1 to 0
-
-SMON(main)> copy frs:orderfil.dat virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 0 
-
-SMON(main)> copy mdb:*.* virt:\tmpback\=>desktop-b25t4o0:15916
-Copy time 1152 
-
-SMON(main)> xcopy fr:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
-spcmd time 44 
-spcmd completed successfully.
-
-
-SMON(main)> xcopy fra:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:15916
+SMON(main)> xcopy fra:\*.* virt:\tmpback\*.*=>desktop-b25t4o0:16056
 [SPRUNCMDF] status = 2A0014; "XCOPY FRA:\*.* VIRT:\TMPBACK\*.*  " : FRA:\*.*
 End of directory
 [SMON] error 0x002A0014
@@ -928,5 +374,5 @@ R E S E T
 [futil_save] Unmapping FROM memory
 [NtrosStop] Saving Complete
 Switching states: old = STARTUP   new = SHUTDOWN
-Tick            Avg: 0.992 ms, Min: 0.002 ms, Max: 1905.126 ms, ticks: 1095930
-Execution times Avg: 0.005 ms, Min: 0.002 ms, Max: 4.659 ms
+Tick            Avg: 0.994 ms, Min: 0.002 ms, Max: 708.629 ms, ticks: 155839
+Execution times Avg: 0.009 ms, Min: 0.002 ms, Max: 0.677 ms

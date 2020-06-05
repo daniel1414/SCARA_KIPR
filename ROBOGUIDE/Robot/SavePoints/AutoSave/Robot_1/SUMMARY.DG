@@ -3,7 +3,7 @@
 F Number: F00000    
 VERSION : HandlingTool         
 $VERSION: V7.7077        2/6/2013
-DATE:     25-MAY-20 14:29 
+DATE:     05-JUN-20 13:25 
 
 VERSION INFORMATION::
 SOFTWARE:              ID:
@@ -298,11 +298,11 @@ MEMORY USAGE::
 
 MEMORY DETAIL (MAIN):
 Pools        TOTAL     AVAILABLE      LARGEST
-TPP          700.0KB     689.6KB     689.6KB
+TPP          700.0KB     684.2KB     684.2KB
 PERM        2040.0KB     798.7KB     798.3KB
 SYSTEM          .0KB       0.0KB       0.0KB
 SHADOW      6296.4KB    6095.7KB      32.0KB
-TEMP       32709.0KB   18477.5KB   18121.4KB
+TEMP       32709.0KB   18496.7KB   18384.5KB
 FROM       31857.0KB   27127.0KB        .0KB
 HARDWARE
 FROM      32MB
@@ -321,7 +321,7 @@ TASK STATES:
 
 ******  History Data  ******
 Routine depth: 0  Routine: PROGRAM_1                           
-Line:     1       Program: PROGRAM_1                             Type: TP    
+Line:    79       Program: PROGRAM_1                             Type: TP    
 
 2       PSCOLD status = ABORTED
 
@@ -344,8 +344,8 @@ Line:  1076       Program: ATSHELL                               Type: PC
 5     LOADCELL status = ABORTED
 
 ******  History Data  ******
-Routine depth: 0  Routine: LOADCELL                            
-Line:    91       Program: LOADCELL                              Type: PC    
+Routine depth: 0  Routine: PBCORE                              
+Line:     0       Program: PBCORE                                Type: 0
 
 6      SWIMSET status = ABORTED
 
@@ -357,7 +357,7 @@ Line:   348       Program: SWIMSET                               Type: PC
 
 ******  History Data  ******
 Routine depth: 0  Routine: PRO_MOV2                            
-Line:     1       Program: PRO_MOV2                              Type: TP    
+Line:     3       Program: PRO_MOV2                              Type: TP    
 
 
 </PRE><H2><A NAME="4">I/O status information</A></H2>
@@ -931,32 +931,32 @@ CURRENT ROBOT POSITION::
 Group #:  1
  
 CURRENT JOINT POSITION:
-Joint   1:     -8.95
-Joint   2:     11.04
-Joint   3:    -10.54
-Joint   4:     -4.54
-Joint   5:    -79.49
-Joint   6:     12.71
+Joint   1:    -57.99
+Joint   2:    -25.44
+Joint   3:    -42.95
+Joint   4:      1.94
+Joint   5:     73.55
+Joint   6:     -4.82
 
 Frame #:  0  Tool #:  1
 CURRENT USER FRAME POSITION:
-X:    925.45
-Y:   -106.45
-Z:    170.02
-W:   -175.63
-P:      -.92
-R:      2.89
-CFG: N U T, 0, 0, 0
+X:    505.21
+Y:   -777.58
+Z:    506.41
+W:     -5.35
+P:    -59.28
+R:    130.39
+CFG: F U T, 0, 0, 0
 
 Tool #:  1
 CURRENT WORLD POSITION:
-X:    925.45
-Y:   -106.45
-Z:    170.02
-W:   -175.63
-P:      -.92
-R:      2.89
-CFG: N U T, 0, 0, 0
+X:    505.21
+Y:   -777.58
+Z:    506.41
+W:     -5.35
+P:    -59.28
+R:    130.39
+CFG: F U T, 0, 0, 0
 
 </PRE><H2><A NAME="8">Ethernet Configuration Information</A></H2>
 <PRE><A HREF="#TOP">[TOP]</A><P>

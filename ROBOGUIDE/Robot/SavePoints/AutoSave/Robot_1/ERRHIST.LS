@@ -1,4 +1,4 @@
-ERRHIST.LS     Robot Name ROBOT 25-MAY-20 14:29     
+ERRHIST.LS     Robot Name ROBOT 05-JUN-20 13:25     
 
 F Number:F00000    
  VERSION: HandlingTool          
@@ -271,7 +271,7 @@ GRP:  1 AXS:  5 MTR_ID biSR0.5/6000 20A
 GRP:  1 AXS:  6 MTR_ID biSR0.5/6000 20A 
                 MTR_INF: H6 DSP2-M 
                 SRV_ID: P01.14
- PWR: 299 SRV 284 RUN: 5 WAIT 0
+ PWR: 466 SRV 450 RUN: 14 WAIT 0
 $SCR.$NUM_GROUP  : 1
 $SCR.$NUM_TOT_AXS: 6
 $SCR.$MAXNUMTASK : 4
@@ -292,9 +292,9 @@ HARDWARE CONFIGURATION::
 Memory     Total      Free   Largest      Used
 -----------------------------------------------
   PERM    1FE000     C7AC0     C7960    136540
-   TPP     AF000     AC684     AC674      297C
+   TPP     AF000     AB0D4     AB0CC      3F2C
 SYSTEM         1         0         0         1
-  TEMP   1FF13E4   120B5C8   11B1E94    DE5E1C
+  TEMP   1FF13E4   12102CC   11F5A20    DE1118
   CMOS    200000
   DRAM   2000000
   FROM   2000000

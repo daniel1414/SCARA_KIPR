@@ -1,10 +1,16 @@
 #
-# Layout Info File : Mon May 25 15:37:15 2020
+# Layout Info File : Fri Jun 05 13:34:30 2020
 #
 LayInfo V1.0 Ascii
-5	4
+11	10
 
 1	Workcell
 2	Workcell2
 3	Workcell
 4	Workcell
+5	Workcell
+6	Workcell
+7	Workcell3
+8	Workcell
+9	Workcell4
+10	Workcell
